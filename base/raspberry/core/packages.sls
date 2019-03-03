@@ -3,6 +3,7 @@ packages-installed:
     - pkgs:
         - vim
         - htop
+        - apt-transport-https
 
 packages-removed:
   pkg.purged:
