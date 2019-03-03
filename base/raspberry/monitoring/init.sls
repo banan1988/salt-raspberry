@@ -1,4 +1,4 @@
-monitoing:
+monitoring:
   test.show_notification:
     - text: |
         Not yet implemented :)
