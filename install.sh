@@ -17,7 +17,7 @@ file_client: local
 master_type: disable
 master_tries: 0
 
-log_level: info
+log_level: warn
 
 EOF
 
@@ -28,5 +28,5 @@ grains:
     - raspberry.raspicast
     - raspberry.kodi.kodi18
     - raspberry.monitoring
-    - raspberry.iot
+    - raspberry.iot.mqtt
 EOF

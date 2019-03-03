@@ -6,6 +6,7 @@ swap-config-backup:
 
 swap-config:
   file.managed:
+    - name: /etc/dphys-swapfile
     - contents:
         - CONF_SWAPFILE=/var/swap
         - CONF_SWAPSIZE=2048
