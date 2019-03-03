@@ -1,5 +1,5 @@
-chronograf-service:
+telegraf-service:
   service.running:
-    - name: chronograf
+    - name: telegraf
     - enable: True
     - reload: True

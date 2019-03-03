@@ -1,7 +1,7 @@
-chronograf-pkg:
+telegraf-pkg:
   pkg.installed:
-    - name: chronograf
+    - name: telegraf
     - require:
         - pkgrepo: influx-repository
     - watch_in:
-        - service: chronograf-service
+        - service: telegraf-service
