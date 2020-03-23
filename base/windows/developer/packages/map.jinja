@@ -1,0 +1,4 @@
+{% import_yaml "windows/developer/packages/defaults.yaml" as defaults %}
+
+{% set packages = salt['pillar.get']('developer:packages', default=defaults.developer.packages, merge=True) %}
+

@@ -1,0 +1,5 @@
+developer:
+  packages:
+    git:
+      version: 2.25.1
+
