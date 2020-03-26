@@ -1,0 +1,3 @@
+{% import_yaml "windows/security/defaults.yaml" as defaults %}
+
+{% set packages = salt['pillar.get']('security', default=defaults.security, merge=True) %}

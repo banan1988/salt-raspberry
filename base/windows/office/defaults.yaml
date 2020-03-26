@@ -1,0 +1,5 @@
+office:
+  libreoffice-fresh:
+    version: 6.3.5
+  adobereader:
+    version: 2020.006.20034

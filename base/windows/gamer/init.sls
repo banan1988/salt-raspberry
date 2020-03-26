@@ -1,4 +1,4 @@
-{% from "windows/developer/packages/map.jinja" import packages with context %}
+{% from "windows/gamer/map.jinja" import packages with context %}
 
 {% for name, parameters in packages.items() %}
 {{ name }}-pkg:
@@ -8,4 +8,3 @@
     - version: {{ parameters['version'] }}
 {% endif %}
 {% endfor %}
-

@@ -1,4 +1,4 @@
-python-python3-pkg:
+python3-pkg:
   chocolatey.installed:
-    - name: openjdk11
-    - version: 11.0.6.1
+    - name: python
+    - version: 3.8.2

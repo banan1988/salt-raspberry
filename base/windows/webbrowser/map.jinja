@@ -1,0 +1,3 @@
+{% import_yaml "windows/webbrowser/defaults.yaml" as defaults %}
+
+{% set packages = salt['pillar.get']('webbrowser', default=defaults.webbrowser, merge=True) %}

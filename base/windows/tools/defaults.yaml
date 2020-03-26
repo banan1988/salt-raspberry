@@ -1,0 +1,11 @@
+tools:
+  7zip:
+    version: 19.0
+  copyq:
+    version: 3.10.0
+#  ditto:
+#    version: 3.22.89.0
+  adobeair:
+    version: 32.0.0.125
+  googledrive:
+    version: latest

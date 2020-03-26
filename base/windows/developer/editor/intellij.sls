@@ -1,4 +1,4 @@
-intellij-idea-pkg:
+intellij-pkg:
   chocolatey.installed:
     - name: intellijidea-community
-    - version: 2019.3.3
+    - version: 2019.3.4

@@ -1,0 +1,12 @@
+developer:
+  tools:
+    git:
+      version: 2.25.1
+    jq:
+      version: latest
+    gradle:
+      version: latest
+    maven:
+      version: latest
+    docker-desktop:
+      version: latest

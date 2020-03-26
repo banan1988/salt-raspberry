@@ -1,2 +1,0 @@
-include:
-  - windows.antivirus.avast
