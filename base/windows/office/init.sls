@@ -4,7 +4,7 @@
 {{ name }}-pkg:
   chocolatey.installed:
     - name: {{ name }}
-{% if 'version' in parameters %}
+{% if 'version' in parameters and parameters['version'] != 'latest' %}
     - version: {{ parameters['version'] }}
 {% endif %}
 {% endfor %}
