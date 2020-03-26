@@ -1,7 +1,7 @@
 webbrowser:
   googlechrome:
-    version: 80.0.3987.132
+    version: latest
   firefox:
-    version: 74.0
-  vivaldi:
-    version: 2.11.1811.47
+    version: latest
+  vivaldi.install:
+    version: latest
