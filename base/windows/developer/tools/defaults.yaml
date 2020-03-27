@@ -1,7 +1,7 @@
 developer:
   tools:
-    git:
-      version: 2.25.1
+    git.install:
+      version: latest
     jq:
       version: latest
     gradle:
