@@ -2,6 +2,14 @@ developer:
   tools:
     git.install:
       version: latest
+      package-parameters: "/NoGuiHereIntegration"
+      config:
+        path: "%USERPROFILE%\\.gitconfig"
+        values:
+          - core.autocrlf=false
+          - user.name=banan
+          - user.email=banan@b2d.com.pl
+          - gui.encoding=utf-8
     jq:
       version: latest
     gradle:

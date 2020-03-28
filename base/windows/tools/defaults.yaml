@@ -1,13 +1,19 @@
 tools:
   7zip.install:
-    version: 19.0
+    version: latest
   copyq:
-    version: 3.10.0
+    version: latest
+    autostart:
+      enabled: true
+      app: copyq
 #  ditto:
-#    version: 3.22.89.0
+#    version: latest
   adobeair:
-    version: 32.0.0.125
+    version: latest
   googledrive:
     version: latest
+    autostart:
+      enabled: true
+      app: googledrivesync
   teamviewer:
     version: latest
