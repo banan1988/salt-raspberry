@@ -1,8 +1,6 @@
 {% set runAs = salt['grains.get']('runas:user') %}
 
-{% set appData = salt['cmd.run'](name='$env:APPDATA', shell='powershell', runas=runAs) %}
-
-{{ appData }}
+{% set appData = salt['cmd.run'](cmd='$env:APPDATA', shell='powershell', runas=runAs) %}
 
 sublimetext3-config:
   file.serialize:
