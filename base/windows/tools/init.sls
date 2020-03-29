@@ -1,5 +1,7 @@
 {% from "windows/tools/map.jinja" import packages with context %}
 
+{% set runAs = salt['grains.get']('runas:user') %}
+
 {% for name, parameters in packages.items() %}
 
 {{ name }}-pkg:
@@ -15,7 +17,7 @@
     - source: salt://windows/tools/files/autostart.ps1
     - args: -app {{ parameters['autostart']['app'] }}
     - shell: powershell
-    - runas: BaNaN
+    - runas: {{ runAs }}
 {% endif %}
 
 {% endfor %}
