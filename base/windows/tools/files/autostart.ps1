@@ -19,5 +19,5 @@ If (Test-Path -Path "$startupPath\$app.lnk") {
     Write-Host $appFullPath
 
     # Create a symbolic link to a app
-    New-Item -ItemType SymbolicLink -Path "$startupPath" -Name "$app.lnk" -Target "$appFullPath"
+    New-Item -ItemType SymbolicLink -Path $startupPath -Value $appFullPath\$app.lnk
 }

@@ -1,6 +1,6 @@
 sublimetext3-config:
   file.serialize:
-    - name: "$env:APPDATA\Sublime Text 3\Packages\User\Preferences.sublime-settings"
+    - name: "%APPDATA%\Sublime Text 3\Packages\User\Preferences.sublime-settings"
     - dataset:
         translate_tabs_to_spaces: true
         scroll_speed: 1.5
