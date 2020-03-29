@@ -20,6 +20,7 @@ explorer-HideFileExt-set-disable:
   cmd.run:
     - name: 'Set-ItemProperty -Path "Microsoft.PowerShell.Core\Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "HideFileExt" -Type DWord -Value 0'
     - shell: powershell
+    - runas: BaNaN
 
 
 keyboard-Hotkey-new-disable:
