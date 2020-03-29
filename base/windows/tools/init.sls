@@ -14,7 +14,8 @@
   cmd.script:
     - source: salt://windows/tools/files/autostart.ps1
     - args: -app {{ parameters['autostart']['app'] }}
-    - shell: "powershell"
+    - shell: powershell
+    - runas: BaNaN
 {% endif %}
 
 {% endfor %}
