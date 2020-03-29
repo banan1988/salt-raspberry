@@ -52,6 +52,8 @@ Salt-Minion-2019.2.3-Py3-AMD64-Setup /S /master=<your-master-host> /minion-name=
 ### Create file C:\salt\conf\minion.d\grains.conf and edit grains
 ```bash
 grains:
+  runas:
+    user: <your-sytem-user>
   roles:
     - windows.developer
 ```
