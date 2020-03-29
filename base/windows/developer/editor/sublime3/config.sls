@@ -1,11 +1,12 @@
 {% set runAs = salt['grains.get']('runas:user') %}
 
 {% set appData = salt['cmd.run'](cmd='$env:APPDATA', shell='powershell', runas=runAs) | regex_escape %}
-{% set configPath = appData + '\Sublime Text 3\Packages\User\Preferences.sublime-settings' | regex_escape %}
+# {% set configPath = appData + '\Sublime Text 3\Packages\User\Preferences.sublime-settings' | regex_escape %}
+
 
 {{ runAs }}
 {{ appData }}
-{{ configPath }}
+{{ appData | path_join('Sublime Text 3\Packages\User', 'Preferences.sublime-settings') }}
 
 # sublimetext3-config:
 #   file.serialize:
