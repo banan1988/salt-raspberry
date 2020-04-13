@@ -12,7 +12,7 @@ If (Test-Path -Path "$symbolicLink") {
     Write-Host "$app has been already added to autostart"
 } else {
     # Find full path by name
-    $target = Get-ChildItem -Path "C:\Program Files\", "C:\Program Files (x86)\", "C:\ProgramData\chocolatey\bin\"  -Include "$app.exe", "$app.bat" -File -Recurse -ErrorAction SilentlyContinue
+    $target = Get-ChildItem -Path "C:\Program Files\", "C:\Program Files (x86)\", "C:\ProgramData\chocolatey\bin\" -Include "$app.exe", "$app.bat" -File -Recurse -ErrorAction SilentlyContinue
 
     # Create a symbolic link to a app
     New-Item -ItemType SymbolicLink -Path $symbolicLink -Value $target
