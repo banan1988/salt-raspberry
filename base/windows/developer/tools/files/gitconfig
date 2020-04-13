@@ -1,0 +1,10 @@
+[core]
+    autocrlf = false
+
+[user]
+    name=banan
+    email=banan@b2d.com.pl
+
+[gui]
+    encoding = utf-8
+    tabsize = 4

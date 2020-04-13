@@ -16,15 +16,14 @@
 {{ name }}-config:
   file.managed:
     - name: {{ parameters['config']['path'] }}
+{% if 'source' in parameters['config'] and parameters['config']['source'] is defined %}
+    - source: {{ parameters['config']['source'] }}
+{% endif %}
 {% if 'values' in parameters['config'] and parameters['config']['values'] is defined %}
     - contents:
 {% for value in parameters['config']['values'] %}
       - "{{ value }}"
 {% endfor %}
-{% endif %}
-{% if 'content' in parameters['config'] and parameters['config']['content'] is defined %}
-    - contents: |
- {{ parameters['config']['content'] | indent(8) }}
 {% endif %}
 {% endif %}
 

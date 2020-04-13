@@ -5,16 +5,7 @@ developer:
       package-args: "/NoGuiHereIntegration"
       config:
         path: "%USERPROFILE%\\.gitconfig"
-        content:
-          [core]
-              autocrlf = false
-          [user]
-              name=banan
-              email=banan@b2d.com.pl
-          [gui]
-              encoding = utf-8
-              tabsize = 4
-
+        source: salt://windows/developer/tools/files/gitconfig
     jq:
       version: latest
     gradle:
