@@ -5,6 +5,9 @@ touchpad-driverDiagnosticPopUp-disable:
     - name: 'Set-ItemProperty -Path "Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SynTP\Parameters\Debug" -Name "DumpKernel" -Type DWord -Value 0'
     - shell: powershell
     - runas: {{ runAs }}
+  test.show_notification:
+    - text: |
+        If combination of keys Ctrl+Shift+L still shows "Debug popup", just uninstall Synaptics software
 
 explorer-HideFileExt-disable:
   cmd.run:
