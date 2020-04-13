@@ -10,7 +10,7 @@ tools:
 #    version: latest
   adobeair:
     version: latest
-  googledrive:
+  google-backup-and-sync:
     version: latest
     autostart:
       enabled: true

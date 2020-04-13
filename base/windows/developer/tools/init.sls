@@ -19,7 +19,7 @@
 {% if 'values' in parameters['config'] and parameters['config']['values'] is defined %}
     - contents:
 {% for value in parameters['config']['values'] %}
-    - "{{ value }}"
+      - "{{ value }}"
 {% endfor %}
 {% endif %}
 {% endif %}
