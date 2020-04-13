@@ -57,3 +57,6 @@ grains:
   roles:
     - windows.developer
 ```
+
+### Putty
+<a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe" target="_blank">Putty 64-bit</a>
