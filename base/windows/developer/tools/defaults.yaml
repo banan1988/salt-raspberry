@@ -2,9 +2,9 @@ developer:
   tools:
     git.install:
       version: latest
-      package-parameters: "/NoGuiHereIntegration"
+      package-args: "/NoGuiHereIntegration"
       config:
-        path: "%USERPROFILE%\\.gitconfig"
+        path: "C:\\Users\\BaNaN\\.gitconfig"
         values:
           - core.autocrlf=false
           - user.name=banan
