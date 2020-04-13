@@ -22,6 +22,10 @@
       - "{{ value }}"
 {% endfor %}
 {% endif %}
+{% if 'content' in parameters['config'] and parameters['config']['content'] is defined %}
+    - contents: |
+ {{ parameters['config']['content'] | indent(8) }}
+{% endif %}
 {% endif %}
 
 {% endfor %}
