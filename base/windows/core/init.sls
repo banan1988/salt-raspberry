@@ -1,5 +1,10 @@
 {% set runAs = salt['grains.get']('runas:user') %}
 
+system-install-updates-critical:
+  wua.uptodate:
+    - severities:
+      - Critical
+
 touchpad-driverDiagnosticPopUp-disable:
   cmd.run:
     - name: 'Set-ItemProperty -Path "Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SynTP\Parameters\Debug" -Name "DumpKernel" -Type DWord -Value 0'
